@@ -1,0 +1,48 @@
+{
+  "name": "danjamesmills/config-class-resolver",
+  "description": "A Laravel package for resolving classes based on configuration",
+  "keywords": [
+    "laravel",
+    "config",
+    "class",
+    "resolver"
+  ],
+  "homepage": "https://github.com/danjamesmills/config-class-resolver",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Daniel Mills",
+      "email": "daniel620@hotmail.co.uk",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.3|^8.0",
+    "illuminate/support": "^7.0|^8.0|^9.0|^10.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^5.0|^6.0|^7.0|^8.0",
+    "phpunit/phpunit": "^9.4"
+  },
+  "autoload": {
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DanJamesMills\\ConfigClassResolver\\Tests\\": "tests"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
