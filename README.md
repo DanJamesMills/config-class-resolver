@@ -6,7 +6,9 @@ A simple Laravel package for resolving classes based on configuration.
 
 Install the package via Composer:
 
+```bash
 composer require danjamesmills/config-class-resolver
+```
 
 ## Usage
 
